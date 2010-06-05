@@ -1,0 +1,28 @@
+<h1>Listing attractions</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Town</th>
+    <th>Description</th>
+    <th>Group</th>
+  </tr>
+
+<% @attractions.each do |attraction| %>
+  <tr>
+    <td><%=h attraction.name %></td>
+    <td><%=h attraction.town %></td>
+    <td><%=h attraction.description %></td>
+    <td><%=h attraction.group %></td>
+    <td><%= link_to 'Show', attraction %></td>
+    <td><%= link_to 'Edit', edit_attraction_path(attraction) %></td>
+    <td><%= link_to 'Destroy', attraction, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New attraction', new_attraction_path %>
+
+<%= link_to 'Random attraction', (url_for :controller => 'attractions', :action => 'random', :id => 1) %>

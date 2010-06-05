@@ -1,0 +1,26 @@
+/* 
+    Document   : style
+    Created on : 23-May-2010, 00:30:19
+    Author     : Jonathan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body {
+    background-color: #666;
+    margin: 15px 25px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#content {
+    background-color: #fff;
+    border: 10px solid #ccc;
+    padding: 10px 10px 20px 10px;
+}

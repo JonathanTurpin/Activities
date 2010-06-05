@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @attraction.name %>
+</p>
+
+<p>
+  <b>Town:</b>
+  <%=h @attraction.town %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @attraction.description %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%=h @attraction.group %>
+</p>
+
+
+<%= link_to 'Edit', edit_attraction_path(@attraction) %> |
+<%= link_to 'Back', attractions_path %>
